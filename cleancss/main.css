@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'guaranpisFont'; /*a name to be used later*/
+    src: url('file:///C:/Users/jiniesta/Github/GuaLanding/Landing/www.blocklords.com/fonts/guaranpis.ttf'); /*URL to font*/
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    color: #ffffff;
+    font-family: Inter, Storica, KVC-Midgard, El Messiri, Poppins, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #000000;
+}
+
+#landing {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 500px;
+    position: absolute;
+    padding: 20% 10% 20% 10%;
+}
+
+#landing > .background-landing::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: linear-gradient(to top, #000000ff 15%, #00000000 30%);
+}
+
+
+.content .intro {
+    max-width: 700px;
+}
+
+@media (min-width: 1200px){
+    .text-big {
+        font-size: 2.9991rem;
+    }
+}
+@media (min-width: 900px){
+    .text-big {
+        font-size: 2.7849rem;
+    }
+}
+@media (min-width: 600px){
+    .text-big {
+        font-size: 2.5707rem;
+    }
+}
+
+
+.text-big {
+    margin: 0;
+    font-family: guaranpisFont;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.167;
+}
+
+.text-normal {
+    font-family: guaranpisFont;
+}
+
+
+#login > img {
+    position: absolute;
+    right: 5vw;
+    top: 10%;
+    width: 30vw;
+    height: 60%;
+}
+
+#login-content {
+    position: absolute;
+    top: 27%;
+    right: 7.3vw;
+    width: 25.5vw;
+    height: 35%;
+    text-align: center;
+    color: black;
+    font-family: 'guaranpisFont';
+}
+
+#login-content > span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+
+#login-content > img {
+    width: 50%;
+}
+
+
+/* Fin landing */
+
+.content-box {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.overlay.bottom {
+    bottom: 0;
+    height: 94px;
+    z-index: 1;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    background-image: url(../images/torn.png);
+    background-repeat: repeat-x;
+}
+
+/* Inicio intro1 */
+
+#intro1 {
+
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #000000ff 0%, #00000011 100%), url(../images/saqueo_roma.png);
+}
+
+#intro1 > .overlay.bottom {
+    background-image: url(../images/torn.png);
+}
+
+
+
+/* Fin intro 1 */
+
+#intro2 {
+
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #000000ff 0%, #00000011 100%), url(../images/971381.jpg);
+}
+
+#intro2 > .overlay.bottom {
+    background-image: url(../images/divider-top.png);
+}
+
+img#divider {
+    position: absolute;
+    bottom: 0;
+}
+
+.left-text-content {
+    width: 40%;
+}
+
+div#content-video {
+    position: absolute;
+    width: 45%;
+    top: 30vh;
+    right: 5vw;
+}
+
+#content-video > img {
+    width: 100%;
+    height: 100%;
+}
+
+img#img-video {
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    width: 97%;
+    height: 90%;
+    top: 4%;
+}
+
+.detalles {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
