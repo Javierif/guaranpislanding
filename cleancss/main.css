@@ -57,6 +57,13 @@ body {
     top: 5vh;
 }
 
+.bounce-arrow-down {
+    position: absolute;
+    left: 42vw;
+    bottom: 0;
+    width: 10vw;
+}
+
 .content .intro {
     max-width: 700px;
 }
