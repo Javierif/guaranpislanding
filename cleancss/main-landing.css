@@ -29,19 +29,12 @@ body {
 }
 
 
-
 .logo__size {
     display: flex;
     justify-content: center;
-    height: 100px;
-}
+    height: 150px;
+    padding-top: 50px;
 
-@media only screen and (max-width: 600px) {
-    .logo__size {
-        display: flex;
-        justify-content: center;
-        height: 70px;
-    }
 }
 
 .section__position__center {
@@ -53,25 +46,37 @@ body {
 .section__block {
     display: flex;
     flex-direction: row;
+    margin-top: 100px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
-@media only screen and (max-width: 600px) {
-    .section__block {
-        display: flex;
-        flex-direction: column;
-    }
+.button__login{
+    width: 50%;
 }
 
 .first__section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -8%;
+    margin-top: -150px;
+}
+
+.first__section::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: linear-gradient(to top, #000000ff 5%, #00000000 30%);
 }
 
 .section__content__gif>img {
     display: block;
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 
 /* First section */
@@ -106,21 +111,44 @@ body {
     text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
 }
 
+
+.bounce-arrow-down {
+    position: absolute;
+    left: 42vw;
+    bottom: 0;
+    width: 10vw;
+}
+
 /* Second section */
 
 .second__section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     height: 100vh;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image:
-        linear-gradient(to bottom, #000000ff 0%, #00000011 40%),
-        linear-gradient(to top, #000000ff 0%, #00000011 40%),
-        url(../images/saqueo_roma.png);
+    background-image: linear-gradient(to bottom, #000000ff 0%, #00000011 100%), url(../images/saqueo_roma.png);
 }
 
+.overlay {
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.overlay.bottom {
+    bottom: 0;
+    height: 110px;
+    z-index: 1;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    background-image: url(../images/torn.png);
+    background-repeat: repeat-x;
+}
 
 /* Third section */
 
@@ -135,4 +163,28 @@ body {
         linear-gradient(to bottom, #000000ff 0%, #00000011 40%),
         linear-gradient(to top, #000000ff 0%, #00000011 40%),
         url(../images/971381.jpg);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .section__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button__login{
+        width: 100%;
+    }
+
+    .section__content__gif>img {
+        width: 100%;
+    }
+
+    .logo__size {
+        display: flex;
+        justify-content: center;
+        height: 150px;
+    }
 }
