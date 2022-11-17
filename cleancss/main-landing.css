@@ -114,9 +114,11 @@ body {
 
 .bounce-arrow-down {
     position: absolute;
-    left: 42vw;
+    margin: auto;
     bottom: 0;
     width: 10vw;
+    left: 0;
+    right: 0;
 }
 
 /* Second section */
@@ -187,4 +189,17 @@ body {
         justify-content: center;
         height: 150px;
     }
+
+    .second__section{
+        background-size: auto 100%;
+    }
+
+    .overlay.bottom {
+        height: 80px;
+    }
+
+    .bounce-arrow-down {
+        width: 30vw;
+    }
+
 }
