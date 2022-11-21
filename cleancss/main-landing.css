@@ -28,7 +28,6 @@ body {
     background-color: #000000;
 }
 
-
 .logo__size {
     display: flex;
     justify-content: center;
@@ -46,23 +45,23 @@ body {
 .section__block {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    /* margin-top: 100px;
     margin-left: 5vw;
-    margin-right: 5vw;
+    margin-right: 5vw; */
 }
 
 .button__login {
     width: 50%;
 }
 
-.first__section {
+/* .first__section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -150px;
-}
+} */
 
-.first__section::after {
+/* .first__section::after {
     position: absolute;
     content: '';
     top: 0;
@@ -71,43 +70,58 @@ body {
     bottom: 0;
     z-index: 0;
     background-image: linear-gradient(to top, #000000ff 5%, #00000000 30%);
+} */
+
+.section__content__gif {
+    height: 300px;
 }
 
-.section__content__gif>img {}
-
-.section__content__gif>.cuadro {
-    display: block;
-    width: 520px;
-    margin: auto;
+.section__content__gif > img {
+    height: inherit;
 }
-
-.section__content__gif>.video {
-    position: absolute;
-    width: 480px;
-    left: 20px;
-    top: 40px;
-}
-
 
 /* First section */
 
 .body__bg {
     height: 100vh;
+    margin-top: -125px;
     background-image:
         linear-gradient(to bottom, #000000ff 0%, #00000011 20%),
         linear-gradient(to top, #000000ff 0%, #00000011 40%),
         url(../images/fondototal_optimized.jpg);
 }
 
-.section__block_logo {}
+.section__block_logo {
+    margin-bottom: 10vh;
+}
 
 
 .section__content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 50px;
     justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.section__content:first-child {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    margin-top: 170px;
+}
+.section__content:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    margin-top: 170px;
 }
 
 .section__caption {
@@ -132,10 +146,10 @@ body {
 /* Second section */
 
 .second__section {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: relative; */
 
     height: 100vh;
     background-size: 100% auto;
@@ -167,6 +181,10 @@ body {
 .section__selector {
     color: rgba(247, 197, 90, 0.5);
     font-family: guaranpisFont;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .icon__badge {
@@ -196,6 +214,19 @@ body {
 
 .section__selector {
     display: flex;
+    align-items: center;
+}
+
+.second__section__caption {
+    display: flex;
+    justify-content: left;
+    padding: 50px;
+}
+
+.options_game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -234,7 +265,6 @@ body {
 .section_religioso:hover {
     background: rgb(0, 22, 36);
     background: radial-gradient(circle, rgba(103, 4, 1, 1) 0%, rgba(149, 148, 233, 0) 48%);
-    
 }
 
 .section_noble:hover {
@@ -256,12 +286,31 @@ body {
         flex-direction: column;
     }
 
-    .button__login{
+    .button__login {
         width: 100%;
     }
 
     .section__content__gif>img {
         width: 100%;
+    }
+
+    .section__content:first-child {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .section__content:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        padding: 50px;
+        text-align: center;
+        margin-top: 0;
     }
 
     .logo__size {
@@ -272,6 +321,7 @@ body {
 
     .second__section {
         background-size: auto 100%;
+        height: 180vh;
     }
 
     .overlay.bottom {
@@ -288,12 +338,27 @@ body {
         height: 100%;
     }
 
-    .third__section > h1 {
+    .third__section>h1 {
         text-align: center;
     }
 
-    .third__section > .section__block {
+    .third__section>.section__block {
         margin-top: 150px;
+    }
+
+    .section__content__gif {
+        height: 150px;
+    }
+    
+    .section__content__gif > img {
+        height: inherit;
+    }
+
+    .options_game {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
