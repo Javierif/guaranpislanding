@@ -45,32 +45,11 @@ body {
 .section__block {
     display: flex;
     flex-direction: row;
-    /* margin-top: 100px;
-    margin-left: 5vw;
-    margin-right: 5vw; */
 }
 
 .button__login {
     width: 50%;
 }
-
-/* .first__section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -150px;
-} */
-
-/* .first__section::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    background-image: linear-gradient(to top, #000000ff 5%, #00000000 30%);
-} */
 
 .section__content__gif {
     height: 300px;
@@ -146,11 +125,6 @@ body {
 /* Second section */
 
 .second__section {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; */
-
     height: 100vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
