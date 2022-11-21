@@ -51,7 +51,7 @@ body {
     margin-right: 5vw;
 }
 
-.button__login{
+.button__login {
     width: 50%;
 }
 
@@ -73,17 +73,15 @@ body {
     background-image: linear-gradient(to top, #000000ff 5%, #00000000 30%);
 }
 
-.section__content__gif>img {
+.section__content__gif>img {}
 
-}
-
-.section__content__gif > .cuadro {  
+.section__content__gif>.cuadro {
     display: block;
     width: 520px;
-    margin: auto;  
+    margin: auto;
 }
 
-.section__content__gif > .video {    
+.section__content__gif>.video {
     position: absolute;
     width: 480px;
     left: 20px;
@@ -101,9 +99,7 @@ body {
         url(../images/fondototal_optimized.jpg);
 }
 
-.section__block_logo {
-
-}
+.section__block_logo {}
 
 
 .section__content {
@@ -147,7 +143,7 @@ body {
     background-image: linear-gradient(to bottom, #000000ff 0%, #00000011 100%), url(../images/saqueo_roma.png);
 }
 
-.second__section > .section__block {
+.second__section>.section__block {
     margin-top: 0px;
 }
 
@@ -174,26 +170,26 @@ body {
 }
 
 .icon__badge {
-    vertical-align:middle;
+    vertical-align: middle;
     filter: grayscale(100%);
     width: 100px;
 }
 
-.section__selector:hover > .icon__badge {
+.section__selector:hover>.icon__badge {
     filter: grayscale(50%);
 }
 
-.section__selector:hover > span {
+.section__selector:hover>span {
     color: #FFEAB5;
     text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
-    
+
 }
 
-.active > .icon__badge{
+.active>.icon__badge {
     filter: grayscale(0%);
 }
 
-.active > span {
+.active>span {
     color: #FFEAB5;
     text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
 }
@@ -219,7 +215,7 @@ body {
         url(../images/971381.jpg);
 }
 
-.third__section > h1 {
+.third__section>h1 {
     position: absolute;
     top: 0;
     left: 5vw;
@@ -228,22 +224,28 @@ body {
     font-size: 3rem;
     line-height: 1.167;
     color: #FFEAB5;
-    text-shadow: 2px 2px 8px rgb(0 0 0 / 75%)  
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 75%)
 }
 
-#section_noble:hover {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgb(0 1 170 / 65%) 0%, rgba(149,148,233,0) 48%)
+.padding-50 {
+    padding: 50px;
 }
 
-#section_religioso:hover {
-    background: rgb(0,22,36);
-    background:radial-gradient(circle,rgba(103,4,1,1) 0%, rgba(149,148,233,0) 48%);
+.section_religioso:hover {
+    background: rgb(0, 22, 36);
+    background: radial-gradient(circle, rgba(103, 4, 1, 1) 0%, rgba(149, 148, 233, 0) 48%);
+    
 }
 
-#section_comerciante:hover {
-    background: rgb(2,0,36);
-    background:radial-gradient(circle,rgba(103,95,1,1) 0%, rgba(149,148,233,0) 48%);
+.section_noble:hover {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgb(0 1 170 / 65%) 0%, rgba(149, 148, 233, 0) 48%)
+}
+
+
+.section_comerciante:hover {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(103, 95, 1, 1) 0%, rgba(149, 148, 233, 0) 48%);
 }
 
 
@@ -252,13 +254,7 @@ body {
     .section__block {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-top: 100px;
     }
-
-    .section__cuadro {
-        display: none;
-    }	
 
     .button__login{
         width: 100%;
@@ -274,7 +270,7 @@ body {
         height: 150px;
     }
 
-    .second__section{
+    .second__section {
         background-size: auto 100%;
     }
 
