@@ -52,7 +52,7 @@ body {
 }
 
 .section__content__gif {
-    height: 300px;
+    height: 400px;
 }
 
 .section__content__gif > img {
@@ -64,6 +64,7 @@ body {
 .body__bg {
     height: 100vh;
     margin-top: -125px;
+    background-size: 100% auto;
     background-image:
         linear-gradient(to bottom, #000000ff 0%, #00000011 20%),
         linear-gradient(to top, #000000ff 0%, #00000011 40%),
@@ -208,12 +209,8 @@ body {
 /* Third section */
 
 .third__section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
     background-repeat: no-repeat;
+    background-size: 100% auto;
     background-image:
         linear-gradient(to bottom, #000000ff 0%, #00000011 40%),
         linear-gradient(to top, #000000ff 0%, #00000011 40%),
