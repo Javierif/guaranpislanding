@@ -28,6 +28,15 @@ body {
     background-color: #000000;
 }
 
+h2 {
+    font-family: guaranpisFont;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.167;
+    color: #dadada;
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
+}
+
 .logo__size {
     display: flex;
     justify-content: center;
@@ -55,25 +64,40 @@ body {
     height: 400px;
 }
 
-.section__content__gif > img {
+.section__content__gif>img {
     height: inherit;
+}
+
+.three_sections_row {
+    display: flex;
+    flex-direction: column;
 }
 
 /* First section */
 
-.body__bg {
-    height: 100vh;
-    margin-top: -125px;
+.first__section {
+    height: 110vh;
     background-size: 100% auto;
+    background-repeat: no-repeat;
     background-image:
         linear-gradient(to bottom, #000000ff 0%, #00000011 20%),
         linear-gradient(to top, #000000ff 0%, #00000011 40%),
         url(../images/fondototal_optimized.jpg);
 }
 
-.section__block_logo {
-    margin-bottom: 10vh;
+.body__bg {
+    /* margin-top: -125px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image:
+        linear-gradient(to bottom, #000000ff 0%, #00000011 20%),
+        linear-gradient(to top, #000000ff 0%, #00000011 40%),
+        url(../images/fondototal_optimized.jpg); */
 }
+
+/* .section__block_logo {
+    margin-bottom: 10vh;
+} */
 
 
 .section__content {
@@ -94,6 +118,7 @@ body {
     text-align: center;
     margin-top: 170px;
 }
+
 .section__content:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -114,6 +139,15 @@ body {
     text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
 }
 
+.section__caption__h2 {
+    font-family: guaranpisFont;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.167;
+    color: #dadada;
+    text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
+}
+
 .bounce-arrow-down {
     position: absolute;
     margin: auto;
@@ -123,10 +157,14 @@ body {
     right: 0;
 }
 
+.max-width-50 {
+    max-width: 50%;
+}
+
 /* Second section */
 
 .second__section {
-    height: 100vh;
+    height: 110vh;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-image: linear-gradient(to bottom, #000000ff 0%, #00000011 100%), url(../images/saqueo_roma.png);
@@ -145,7 +183,8 @@ body {
 
 .overlay.bottom {
     bottom: 0;
-    height: 110px;
+    height: 200px;
+    margin-bottom: -50px;
     z-index: 1;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
@@ -209,28 +248,36 @@ body {
 /* Third section */
 
 .third__section {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-image:
         linear-gradient(to bottom, #000000ff 0%, #00000011 40%),
-        linear-gradient(to top, #000000ff 0%, #00000011 40%),
+        linear-gradient(to top, #000000ff 0%, #00000011 100%),
         url(../images/971381.jpg);
 }
 
-.third__section>h1 {
-    position: absolute;
-    top: 0;
-    left: 5vw;
-    font-family: guaranpisFont;
-    font-weight: 400;
-    font-size: 3rem;
-    line-height: 1.167;
-    color: #FFEAB5;
-    text-shadow: 2px 2px 8px rgb(0 0 0 / 75%)
+.third__section__caption {
+    margin-top: 50px;
 }
 
-.padding-50 {
-    padding: 50px;
+
+.section__caption__role {
+    display: flex;
+    flex-direction: row;
+}
+
+.section_religioso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .section_religioso:hover {
@@ -238,11 +285,26 @@ body {
     background: radial-gradient(circle, rgba(103, 4, 1, 1) 0%, rgba(149, 148, 233, 0) 48%);
 }
 
+.section_noble {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
 .section_noble:hover {
     background: rgb(2, 0, 36);
     background: radial-gradient(circle, rgb(0 1 170 / 65%) 0%, rgba(149, 148, 233, 0) 48%)
 }
 
+.section_comerciante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
 .section_comerciante:hover {
     background: rgb(2, 0, 36);
@@ -274,6 +336,7 @@ body {
         text-align: center;
         margin-top: 0;
     }
+
     .section__content:nth-child(2) {
         display: flex;
         flex-direction: column;
@@ -303,14 +366,12 @@ body {
         width: 30vw;
     }
 
-    .third__section {
-        align-items: normal;
-        background-size: auto 100%;
-        height: 100%;
-    }
-
     .third__section>h1 {
         text-align: center;
+    }
+
+    .third__section__caption {
+        margin-top: 50px;
     }
 
     .third__section>.section__block {
@@ -320,8 +381,8 @@ body {
     .section__content__gif {
         height: 150px;
     }
-    
-    .section__content__gif > img {
+
+    .section__content__gif>img {
         height: inherit;
     }
 
@@ -332,4 +393,49 @@ body {
         align-items: center;
     }
 
+    .section__caption__role {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first__section {
+        background-size: auto 100%;
+        height: 100vh;
+    }
+
+    .second__section {
+        background-size: auto 100%;
+        height: 100%;
+    }
+
+    .third__section {
+        background-size: auto 100%;
+        height: 100vh;
+        display: flow-root
+    }
+
+    .section__caption__h2 {
+        font-family: guaranpisFont;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.167;
+        color: #dadada;
+        text-shadow: 2px 2px 8px rgb(0 0 0 / 75%);
+    }
+
+    .max-width-50 {
+        max-width: 100%;
+    }
+
+    .section_religioso {
+        padding: 0;
+    }
+
+    .section_noble {
+        padding: 0;
+    }
+
+    .section_comerciante {
+        padding: 0;
+    }
 }
