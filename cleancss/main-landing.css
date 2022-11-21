@@ -252,7 +252,13 @@ body {
     .section__block {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
     }
+
+    .section__cuadro {
+        display: none;
+    }	
 
     .button__login{
         width: 100%;
@@ -278,6 +284,20 @@ body {
 
     .bounce-arrow-down {
         width: 30vw;
+    }
+
+    .third__section {
+        align-items: normal;
+        background-size: auto 100%;
+        height: 100%;
+    }
+
+    .third__section > h1 {
+        text-align: center;
+    }
+
+    .third__section > .section__block {
+        margin-top: 150px;
     }
 
 }
